@@ -1,0 +1,10 @@
+version: "3"
+services:
+  valheim:
+    image: jas6377/jmusicbot-docker:latest
+    environment:
+      TOKEN: BOT_TOKEN_HERE
+      OWNER: OWNER_ID_HERE
+    restart: unless-stopped
+    volumes:
+      - /path/to/data/:/data
